@@ -1292,8 +1292,8 @@ input, select, textarea {
 
 		#header .logo {
 			/* Size */
-			width: 12em;
-			height: 12em;
+			width: 12rem;
+			height: 12rem;
 
 			/* Border */
 			line-height: 8.0rem;
