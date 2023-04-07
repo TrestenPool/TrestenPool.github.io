@@ -5,417 +5,243 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+ 
+  <!------------------------------------------------------>
+  <!------------------------ HEAD ------------------------>
+  <!------------------------------------------------------>
 	<head>
 		<title>Tresten Pool</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+    
+    <!-- Stylesheets -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
+  <!------------------------------------------------------>
+  <!------------------------ BODY ------------------------>
+  <!------------------------------------------------------>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<!-- <span class="icon fa-gem"></span> -->
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Tresten Pool</h1>
-								<p>Recent Graduate of Computer Science from the University of Texas at San antonio</p>
-							</div>
-						</div>
-						<nav>
-						 <!-- Different cards -->
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<li><a href="#resume"> <b>Resume</b></a></li>
-							</ul>
-						</nav>
-						
+      <!-- Header -->
+      <header id="header">
+        
+        <!-- logo -->
+        <div class="logo">
+        </div>
 
-					</header>
+        <!-- Name and description -->
+        <div class="content">
+          <div class="inner">
+            <h1>Tresten Pool</h1>
+            <p>Software Engineer | Jeep enthusiast | Gym Goer</p>
+          </div>
+        </div>
 
-<header id="header">
-						<!-- Social Media -->
-						<div class="socials">
-						     <a href="https://www.instagram.com/tresten8/" target="_blank" class="individual icon brands fa-instagram"> Instagram</a>
-						     <a href="https://twitter.com/Tresten_32" target="_blank" class="individual icon brands fa-twitter"> Twitter</a>
-						     <a href="https://github.com/TrestenPool" target="_blank" class="individual icon brands fa-github"> Github</a>
-						     <a href="https://www.linkedin.com/in/tresten-pool-aa5890149/" target="_blank" class="individual icon brands fa-linkedin"> LinkedIn</a>
-						 </div>
-</header>
+        <!-- navbar for the different cards -->
+        <nav>
+          <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume"> <b>Resume</b></a></li>
+          </ul>
+        </nav>
 
-				<!-- Main -->
-					<div id="main">
+      </header>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>My name is <b>Tresten Pool</b>, I am graduating in the summer of 2022 with a bachelors in <b>Computer Science</b> with a concentration in software engineering from the <b>University of Texas at San Antonio</b>. My passion includes computer science related things like diving into the linux kernel, developing useful web apis and studying the best design patterns and best practices.</p>
-							</article>
+      <!-- Bottom social media links -->
+      <header id="header">
+        <!-- Social Media -->
+        <div class="socials">
+          <a href="https://www.instagram.com/tresten8/" target="_blank" class="individual icon brands fa-instagram"> Instagram</a>
+          <a href="https://twitter.com/Tresten_32" target="_blank" class="individual icon brands fa-twitter"> Twitter</a>
+          <a href="https://github.com/TrestenPool" target="_blank" class="individual icon brands fa-github"> Github</a>
+          <a href="https://www.linkedin.com/in/tresten-pool-aa5890149/" target="_blank" class="individual icon brands fa-linkedin"> LinkedIn</a>
+          <a onclick="copyToClipboard('trestenpool@gmail.com')" class="individual icon fa-envelope">Email</a>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpeg"  alt="" /></span>
-								<p>During college I worked as a part time IT help desk technician. I started the remote position at the start of 2020 and am currently employed with them. As a help desk technician I was tasked with solving technical questions that included solutions such as troubleshooting with SQL queries, finding the error in event viewer and taking the necessary steps to solve the issue.</p>
-							</article>
+          <!-- javascript to copy my email to the client clipboard -->
+          <script>
+            function copyToClipboard(text) {
+              var input = document.createElement("input");
+              input.setAttribute("value", text);
+              document.body.appendChild(input);
+              input.select();
+              document.execCommand("copy");
+              document.body.removeChild(input);
+              alert("Email copied to clipboard: " + text);
+            }
+          </script>
+        </div>
+      </header>
 
-						<!-- Projects -->
-							<article id="projects">
-								<!-- yelp camp -->
-								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/pic031.jpg" height="200"  alt="" />
-								<h3 class="major"><a href="https://yelpcamp-148183.herokuapp.com/" target="_blank"><b>Yelp Camp</b></a></h3>
-								<p>In this <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">Udemy</a> course I learned HTML,CSS,Javascript and many libraries in order to build a fully website as well as a CRUD API for a yelp like campground site. I used <b>ExpressJs </b> for the backend routing and logic while using <b>ejs</b> for the templating engine to serve the front end.</p>
-								</span>
+      <!-- Main -->
+      <div id="main">
 
-								<!-- Inventory management system -->
-								<span class="image main"><img src="images/inventory.jpeg" height="200"  alt="" />
-								<h3 class="major"><a href="https://ec2-54-90-227-153.compute-1.amazonaws.com/" target="_blank"><b>Inventory Management System</b></a></h3>
-								<p>This was a project I had made for my advanced software engineering class. The site is hosted on the ec2 service on Amazon Web Services. I used php for both the front and back end. The site is fully functional CRUD API and also implements a web interface.</p>
-								</span>
-								
-								<!-- Inventory management system API -->
-								<span class="image main"><img src="images/swagger.png" height="200"  alt="" />
-									<h3 class="major"><a href="https://ec2-54-90-227-153.compute-1.amazonaws.com/api/documentation" target="_blank"><b>Inventory Management System API endpoint</b></a></h3>
-									<a href="https://github.com/TrestenPool/Inventory_management_system_API">Github Repo</a>
-									<p>This is the swagger or open api docs for the inventory management system RESTful api. This swagger site show all the different routes and will also allow you to perform full crud on the different functionalities on each route. This api was built using laravel 8.</p>
-									</span>
+          <!-- Education -->
+          <article id="education">
+            <h2 class="major">Education</h2>
+            <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+            <p>I graduated from the University of Texas at San Antonio (UTSA) in 2022. With a bachelors in computer science and a concentration in software engineering</p>
+            <img src="images/utsa-acm-logo.png" alt="UTSA ACM Logo">
+            <p>During my time at UTSA I participated in many extracurricular groups including <b>ACM (association of computing and machinery)</b></p>
+            <p>I am passionate about all things technology but primarily focus on backend development and systems programming.</p>
+          </article>
 
-								<!-- Spring boot project -->
-								<span class="image main"><img src="images/springboot.png" height="200"  alt="" />
-									<h3 class="major"><a href="https://github.com/TrestenPool/Spring-boot-management-system" target="_blank"><b>Spring boot project</b></a></h3>
-									<p>This was a project I completed for CS 4743 Enterprise Software Engineering class. This project was a management system for people. It was built using spring boot and tested the routes using wiremock.</p>
-									</span>	
-							</article>
+          <!-- Work -->
+          <article id="work">
+            <h2 class="major">Work</h2>
+            <span class="image main"><img src="images/pic02.jpeg"  alt="Solugenix logo" height="150px"/>
+              <p>Solugenix:<br>IT Help Desk Technician( 2020 - 2022 )</p>
+              <p>During college I worked as a part time IT help desk technician. I started the remote position at the start of 2020 and am currently employed with them. As a help desk technician I was tasked with solving technical questions that included solutions such as troubleshooting with SQL queries, finding the error in event viewer and taking the necessary steps to solve the issue.</p>
+            </span>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pool.png" width=auto height=auto alt="" /></span>
-								<p>When I'm not writing code I enjoy going to the gym, playing pool and doing puzzles.</p>
-							</article>
+            <span class="image main"><img src="images/sogeti-logo.png"  alt="Sogeti logo" height="150px" />
+              <p>Sogeti:<br>Associate consultant in software engineering ( 2022 - present )</p>
+              <p>Proficient in PowerShell, I developed internal tools to streamline software deployment and upgrades by communicating with Microsoft SQL Server. Additionally, I have extensive experience developing Java Spring Boot applications and working with cloud technologies such as AWS and Azure to ensure effective software deployment and management. My diverse skill set and experience make me a valuable asset for any organization seeking to optimize its software development and deployment processes.</p>
+            </span>
+          </article>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
+          <!-- Projects -->
+          <article id="projects">
+            <h2 class="major">Projects</h2>
 
-								<form method="get" action="mailto:trestenpool@gmail.com" enctype="multipart/form-data" target="_blank">
-									<div class="fields">
-										<!-- Subject -->
-										<div class="field">
-											<label for="Subject">Subject</label>
-											<textarea name="subject" id="subject" rows="1"></textarea>
-										</div>
-										<!-- message field -->
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="body" id="message" rows="4"></textarea>
-										</div>
+            <!-- yelp camp -->
+            <span class="image main"><img src="images/pic031.jpg" height="200"  alt="" />
+              <h3 class="major"><a href="https://yelpcamp-148183.herokuapp.com/" target="_blank"><b>Yelp Camp</b></a></h3>
+              <p>In this <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">Udemy</a> course I learned HTML,CSS,Javascript and many libraries in order to build a fully website as well as a CRUD API for a yelp like campground site. I used <b>ExpressJs </b> for the backend routing and logic while using <b>ejs</b> for the templating engine to serve the front end.</p>
+            </span>
 
-									</div>
-									<!-- buttons -->
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+            <!-- Inventory management system -->
+            <span class="image main"><img src="images/inventory.jpeg" height="200"  alt="" />
+              <h3 class="major"><a href="https://ec2-54-90-227-153.compute-1.amazonaws.com/" target="_blank"><b>Inventory Management System</b></a></h3>
+              <p>This was a project I had made for my advanced software engineering class. The site is hosted on the ec2 service on Amazon Web Services. I used php for both the front and back end. The site is fully functional CRUD API and also implements a web interface.</p>
+            </span>
+            
+            <!-- Inventory management system API -->
+            <span class="image main"><img src="images/swagger.png" height="200"  alt="" />
+              <h3 class="major"><a href="https://ec2-54-90-227-153.compute-1.amazonaws.com/api/documentation" target="_blank"><b>Inventory Management System API endpoint</b></a></h3>
+              <a href="https://github.com/TrestenPool/Inventory_management_system_API">Github Repo</a>
+              <p>This is the swagger or open api docs for the inventory management system RESTful api. This swagger site show all the different routes and will also allow you to perform full crud on the different functionalities on each route. This api was built using laravel 8.</p>
+            </span>
 
-								<ul class="icons">
-									<li>Send me a call <a class="icon brands" href="tel:3614462936"><span class="label"></span><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-									<br>
-									<li>Or</li>
-									<br>
-									<li>Shoot me a text <a class="icon brands" href="sms:3614462936"><span class="label"></span><i class="fa fa-sms" aria-hidden="true"></i></a></li>
-								</ul>
-								
+            <!-- Spring boot project -->
+            <span class="image main"><img src="images/springboot.png" height="200"  alt="" />
+              <h3 class="major"><a href="https://github.com/TrestenPool/Spring-boot-management-system" target="_blank"><b>Spring boot project</b></a></h3>
+              <p>This was a project I completed for CS 4743 Enterprise Software Engineering class. This project was a management system for people. It was built using spring boot and tested the routes using wiremock.</p>
+            </span>	
+          </article>
 
-							</article>
+          <!-- Skills -->
+          <article id="skills">
+            <h2 class="major">Skills</h2>
+            <h3>Programming languages</h3>
+            <ul>
+            <li>Java ( Spring, Springboot )</li>
+            <li>C, C++ ( MPI, OpenMP )</li>
+            <li>PHP ( Laravel )</li>
+            <li>Powershell, Bash</li>
+            <li>HTML, CSS</li>
+            <li>Javascript ( Node, ExpressJS )</li>
+            <li>Python ( Django, Data science libraries, Selenium )</li>
+            </ul>
 
-						<!-- Resume -->
-							<article id="resume">
-								<h2 class="major">Resume</h2>
-								<!-- <span class="image main"><img src="images/resume.pdf" alt=""/> -->
-								<embed src="images/resume.pdf" class="main image" style="height: 47rem;"/>
-								<!-- Download button -->
-								<a href="images/resume.pdf" class="" download="resume.pdf">Download</a>
-								<br>
-								<br>
-								<!-- View in separate tab button -->
-								<a href="images/resume.pdf" target="_blank">View in Separate tab</a>
-								</span>
-							</article>
+            <h3>Cloud technologies</h3>
+            <ul>
+            <li>AWS</li>
+            <li>Azure</li>
+            </ul>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+            <h3>Databases</h3>
+            <ul>
+            <li>SQL: ( Microsoft SQL, MySQL, Postgres )</li>
+            <li>NOSQL: ( Mongo )</li>
+            </ul>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+          </article>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+          <!-- About Me -->
+          <article id="about">
+            <h2 class="major">About</h2>
+            <span class="image main"><img src="images/pool.png" width=auto height=auto alt="" /></span>
+            <p>When I'm not writing code I enjoy going to the gym, playing pool and doing puzzles.</p>
+          </article>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+          <!-- Contact -->
+          <article id="contact">
+            <h2 class="major">Contact</h2>
 
-								<section>
-									<h3 class="major">Lists</h3>
+            <form method="get" action="mailto:trestenpool@gmail.com" enctype="multipart/form-data" target="_blank">
+              <div class="fields">
+                <!-- Subject -->
+                <div class="field">
+                  <label for="Subject">Subject</label>
+                  <textarea name="subject" id="subject" rows="1"></textarea>
+                </div>
+                <!-- message field -->
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea name="body" id="message" rows="4"></textarea>
+                </div>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+              </div>
+              <!-- buttons -->
+              <ul class="actions">
+                <li><input type="submit" value="Send Message" class="primary" /></li>
+                <li><input type="reset" value="Reset" /></li>
+              </ul>
+            </form>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+            <ul class="icons">
+              <li>Send me a call <a class="icon brands" href="tel:3614462936"><span class="label"></span><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+              <br>
+              <li>Or</li>
+              <br>
+              <li>Shoot me a text <a class="icon brands" href="sms:3614462936"><span class="label"></span><i class="fa fa-sms" aria-hidden="true"></i></a></li>
+            </ul>
+          </article>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+          <!-- Resume -->
+          <article id="resume">
+            <h2 class="major">Resume</h2>
+            <!-- <span class="image main"><img src="images/resume.pdf" alt=""/> -->
+            <embed src="images/resume.pdf" class="main image" style="height: 47rem;"/>
+            <!-- Download button -->
+            <a href="images/resume.pdf" class="" download="resume.pdf">Download</a>
+            <br>
+            <br>
+            <!-- View in separate tab button -->
+            <a href="images/resume.pdf" target="_blank">View in Separate tab</a>
+            </span>
+          </article>
+      </div>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+      <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">&copy;Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+      </footer>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+    </div>
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+    <!-- Background image -->
+    <div id="bg">
+    </div>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy;Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
 	</body>
+
+
 </html>

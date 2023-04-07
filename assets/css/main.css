@@ -1306,7 +1306,7 @@ input, select, textarea {
 			border-radius: 100%;
 
 			/* Filling image */
-			background-image: url("../../images/profile.png");
+			background-image: url("../../images/profile.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
